@@ -1,0 +1,142 @@
+.game-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.game-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.game-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mute-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mute-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.history-section {
+  margin-top: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.history-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.history-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.history-main {
+  display: grid;
+  grid-template-columns: 80px 100px 80px 1fr;
+  gap: 1rem;
+}
+
+.history-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.8rem;
+}
+
+.detail-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.detail-label {
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
+.detail-value {
+  font-family: 'Courier New', monospace;
+  color: #ddd;
+  font-size: 0.75rem;
+}
+
+.history-item .round-id {
+  color: #aaa;
+}
+
+.history-item .bin {
+  font-weight: 600;
+}
+
+.history-item .mult {
+  color: #4ade80;
+  font-weight: 700;
+}
+
+.history-item .payout {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .game-page {
+    padding: 1rem;
+  }
+
+  .game-container {
+    padding: 1rem;
+  }
+
+  .game-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .history-main {
+    grid-template-columns: 60px 80px 60px 1fr;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .history-details {
+    grid-template-columns: 1fr;
+    font-size: 0.75rem;
+  }
+}
